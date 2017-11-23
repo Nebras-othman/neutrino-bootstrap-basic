@@ -1,0 +1,39 @@
+{
+  "name": "basic-neutrino-bootstrap",
+  "version": "1.0.0",
+  "description": "an example of neutrino setup",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "neutrino build --use neutrino-preset-web",
+    "start": "neutrino start --use neutrino-preset-web",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "neutrino",
+    "example",
+    "bootstrap"
+  ],
+  "author": "Nebras Othman",
+  "license": "MIT",
+  "devDependencies": {
+    "neutrino": "^7.3.3",
+    "neutrino-middleware-styles-loader": "0.0.6",
+    "neutrino-preset-airbnb-base": "^7.3.3",
+    "neutrino-preset-web": "^7.3.3",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nebras-othman/neutrino-bootstrap-basic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nebras-othman/neutrino-bootstrap-basic/issues"
+  },
+  "homepage": "https://github.com/Nebras-othman/neutrino-bootstrap-basic#readme"
+}
