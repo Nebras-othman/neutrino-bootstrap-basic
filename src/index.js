@@ -11,12 +11,23 @@ import mkCarousel from './carousel';
 /**
  * Products
  */
+function mkNavCat(items) {
+  const objNavbar = $('.mynav');
+  objNavbar.empty();
+  items.forEach((item) => {
+    objNavbar.append(`<li class="nav-item">
+  <a class="nav-link" href="#">${item.name}<span class="sr-only">(current)</span></a>
+  </li>`);
+  });
+}
+
 $(() => {
   $.ajax('./static/categories.json')
     .done((categories) => {
       const $carousel = mkCarousel(categories);
       $('#root').append($carousel);
       $carousel.carousel();
+      mkNavCat(categories);
     });
 
   $('#root')
